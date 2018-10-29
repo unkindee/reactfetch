@@ -1,0 +1,33 @@
+.App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.logo img {
+    height: 94px;
+    width: auto;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer p {
+    text-transform: uppercase;
+    max-width: 100%;
+    max-width: 260px;
+    text-align: center;
+}
+@media screen and (max-width: 667px) {
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    .footer {
+        position: relative;
+    }
+}

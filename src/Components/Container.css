@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    background-size: contain;
+    background-color: rgba(228,230,231,0.8);
+    margin: 0 15px;
+    padding: 10% 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 800px;
+ }

@@ -1,0 +1,190 @@
+.form-wrapper {
+    width: 100%;
+    max-width: 610px;
+    padding-top: 85px;
+}
+.form-wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.form-wrapper input,
+.form-wrapper textarea {
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: solid 1px transparent;
+}
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    border: 1px solid #1085ca;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.form-wrapper input::-webkit-input-placeholder,
+.form-wrapper textarea::-webkit-input-placeholder,
+.submit-wrapper button {
+    text-transform: uppercase;
+}
+.form-wrapper input:-ms-input-placeholder,
+.form-wrapper textarea:-ms-input-placeholder,
+.submit-wrapper button {
+    text-transform: uppercase;
+}
+.form-wrapper input::-ms-input-placeholder,
+.form-wrapper textarea::-ms-input-placeholder,
+.submit-wrapper button {
+    text-transform: uppercase;
+}
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder,
+.submit-wrapper button {
+    text-transform: uppercase;
+}
+.form-wrapper textarea {
+    min-height: 136px;
+}
+.form-wrapper .input-wrapper {
+    width: 100%;
+    max-width: 302px;
+    margin-bottom: 6px;
+    position: relative;
+}
+.form-wrapper .input-wrapper:after {
+    background: #f52020;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form-wrapper .error {
+    position: absolute;
+    z-index: 1;
+    right: -90px;
+    bottom: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 220px;
+}
+.form-wrapper .error-message,
+.form-wrapper .close {
+    background: #f52020;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.form-wrapper .error-message {
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-wrapper .error-message:after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f52020;
+    clear: both;
+}
+.form-wrapper .close {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.form-wrapper .textarea-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    position: relative;
+}
+.form-wrapper .submit-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+.form-wrapper button {
+    background: #1085ca;
+    padding: 20px 94px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.form-wrapper .success-message {
+    background: green;
+    padding: 20px;
+    color: #ffff;
+    margin-top: 25px;
+}
+@media screen and (max-width: 667px) {
+    .form-wrapper {
+        padding-top: 10px;
+    }
+    .form-wrapper .input-wrapper{
+        max-width: initial;
+    }
+    .form-wrapper .error{
+        position: relative;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        display: block;
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        max-width: 100%;
+    
+    }
+    .form-wrapper .close {
+        display: none;
+    }
+    .form-wrapper .textarea-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
